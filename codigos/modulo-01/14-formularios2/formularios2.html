@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulários2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<form action="cadastro.php" method="POST">
+		<fieldset>
+			<legend>Informações Pessoais</legend>
+			Nome<br><input type="text" name="nome" placeholder="Insira seu nome aqui"  maxlength="10" required><br>
+			Senha<br><input type="password" name="senha" placeholder="Insira sua senha aqui" required><br>
+			Email<br><input type="email" name="email" placeholder="Insira seu email aqui" required><br>
+			Sexo<br><input type="radio" name="sexo" value="Masculino">Masculino
+					<input type="radio" name="sexo" value="Feminino">Feminino
+					<input type="radio" name="sexo" value="Outros">Outros<br><br>
+			Localidades<br><input type="checkbox" name="localidade" value="Nacional">Nacional
+							<input type="checkbox" name="localidade" value="Internacional">Internacional
+							<input type="checkbox" name="localidade" value="Local">Local<br><br>
+			Quantidade<br><input type="number" name="quantidade" min="0" max="10"><br><br>
+			Data<br><input type="date" name="data"><br><br>
+			Hora<br><input type="time" name="hora"><br><br>
+			Tonalidade<br><input type="range" name="tonalidade"><br>
+			Cor<br><input type="color" name="cor"><br><br>
+			Imagem<br><input type="file" name="imagem"><br><br>
+			URL<br><input type="url" name="site"><br><br>
+			Search<br><input type="search" name="busca"><br><br>
+			Telefone<br><input type="tel" name="telefone"><br>
+			<br><input type="submit" name="btn-enviar" value="Enviar">
+		</fieldset>
+		</form>
+	</body>
+</html>
